@@ -6,5 +6,6 @@ var handle = {}
 handle["/"] = requestHandlers.start;
 handle["/start"] = requestHandlers.start;
 handle["/info"] = requestHandlers.info;
+handle["/injections"] = requestHandlers.injections;
 
 server.start(router.route, handle);
