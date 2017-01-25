@@ -1,0 +1,1 @@
+var querystring = require("querystring");var fs = require('fs');function start(request, response, postData) {	var  scan_body = require('./static/auth_body');	response.writeHead(200, {"Content-Type": "text/html"});	response.write(scan_body.header + '<p>'+postData+'</p>'+ scan_body.footer);	response.end();}exports.start = start;  
