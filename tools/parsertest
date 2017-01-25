@@ -1,0 +1,15 @@
+var jsdom = require("jsdom");
+jsdom.env({
+    file: 'page.html',
+    done: function (err, window) {
+        GLOBAL.window = window;
+        GLOBAL.document = window.document;
+        // now you can work on parsing HTML as you normally would in a browser
+        // e.g. this will work  
+        findForms();
+    }
+});
+function findForms() {
+    var form = document.forms;
+    console.log(form);
+}
