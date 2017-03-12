@@ -1,1 +1,0 @@
-curl $(cat sitemap) | grep "action"
