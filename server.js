@@ -18,11 +18,12 @@ function start(route, handle) {
     request.addListener("end", function() {
       route(handle, pathname, request, response, postData);
     });
-
+	
   }
 
-  http.createServer(onRequest).listen(8888,'192.168.1.38');
-  console.log("Server has started.");
+  var server = http.createServer(onRequest).listen(8888,'192.168.1.38');
+  console.log("Server has started at 8888, '192.168.1.38'.");
+  server.timeout = 999999999999999999;
 }
 
 exports.start = start;

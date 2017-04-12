@@ -10,5 +10,8 @@ handle["/injections"] = requestHandlers.injections;
 handle["/badauth"] = requestHandlers.badauth;
 handle["/xss"] = requestHandlers.xss;
 handle["/direct"] = requestHandlers.direct;
+handle["/csrf"] = requestHandlers.csrf;
+handle["/known"] = requestHandlers.known;
+handle["/redirs"] = requestHandlers.redirs;
 
 server.start(router.route, handle);
