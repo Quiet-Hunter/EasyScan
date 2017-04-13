@@ -1,0 +1,12 @@
+apt-get install wget
+apt-get install sed
+apt-get install nslookup
+apt-get install curl
+apt-get install whois
+apt-get install gobuster
+apt-get install sqlmap
+apt-get install wpscan
+apt-get install droopescan
+apt-get install node
+apt-get install npm
+npm install jsdom

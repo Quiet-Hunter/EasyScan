@@ -22,6 +22,8 @@ function start(route, handle) {
   }
 
   var server = http.createServer(onRequest).listen(8888,'192.168.1.38');
+  //For cloud9
+  //var server = http.createServer(onRequest).listen(process.env.PORT, process.env.IP);
   console.log("Server has started at 8888, '192.168.1.38'.");
   server.timeout = 999999999999999999;
 }
